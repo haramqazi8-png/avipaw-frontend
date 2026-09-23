@@ -1,0 +1,446 @@
+/* =========================================
+   AVIPAW RESCUE - APP.CSS
+   ========================================= */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f7f8f6;
+  color: #26352c;
+}
+
+/* =========================================
+   NAVIGATION
+   ========================================= */
+
+nav {
+  width: 100%;
+  padding: 18px 35px;
+  background: #304b3a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+  transition: 0.2s ease;
+}
+
+nav a:hover {
+  color: #dcebdc;
+}
+
+/* =========================================
+   GENERAL PAGE
+   ========================================= */
+
+.page {
+  width: 100%;
+  min-height: calc(100vh - 70px);
+}
+
+.page-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+/* =========================================
+   HEADINGS
+   ========================================= */
+
+h1,
+h2,
+h3 {
+  color: #304b3a;
+}
+
+h1 {
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 22px;
+}
+
+p {
+  line-height: 1.7;
+  color: #626d66;
+}
+
+/* =========================================
+   BUTTONS
+   ========================================= */
+
+button,
+.btn {
+  border: none;
+  border-radius: 8px;
+  padding: 11px 20px;
+  background: #557a5c;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition: 0.2s ease;
+}
+
+button:hover,
+.btn:hover {
+  background: #3f6046;
+}
+
+/* =========================================
+   FORMS
+   ========================================= */
+
+input,
+select,
+textarea {
+  width: 100%;
+  max-width: 500px;
+  padding: 12px 14px;
+  border: 1px solid #d5ddd7;
+  border-radius: 8px;
+  background: white;
+  font-size: 15px;
+  outline: none;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #557a5c;
+}
+
+label {
+  display: block;
+  margin-bottom: 7px;
+  font-weight: 600;
+  color: #304b3a;
+}
+
+/* =========================================
+   GENERAL CARDS
+   ========================================= */
+
+.card {
+  background: white;
+  border-radius: 16px;
+  padding: 25px;
+  box-shadow: 0 7px 22px rgba(0, 0, 0, 0.07);
+}
+
+/* =========================================
+   ANIMAL GRID
+   ========================================= */
+
+.animals-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.animal-card {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 7px 22px rgba(0, 0, 0, 0.07);
+}
+
+.animal-card img {
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+  display: block;
+}
+
+.animal-card-content {
+  padding: 20px;
+}
+
+.animal-card h2 {
+  margin-top: 0;
+  font-size: 24px;
+}
+
+/* =========================================
+   STORIES GRID
+   ========================================= */
+
+.stories-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.story-card {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 7px 22px rgba(0, 0, 0, 0.07);
+}
+
+.story-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.story-content {
+  padding: 22px;
+}
+
+.story-content h3 {
+  margin-top: 0;
+}
+
+/* =========================================
+   STORY DETAILS
+   ========================================= */
+
+.story-details-card {
+  width: 100%;
+  max-width: 850px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+/*
+   NORMAL STORY IMAGE SIZE
+   Not huge and not tiny.
+*/
+
+.story-details-card img {
+  width: 90%;
+  max-width: 550px;
+  height: 260px;
+  object-fit: cover;
+  display: block;
+  margin: 25px auto 0;
+  border-radius: 12px;
+}
+
+.story-details-content {
+  padding: 30px;
+}
+
+.story-details-content h2 {
+  margin-top: 0;
+  color: #304b3a;
+  font-size: 30px;
+}
+
+.story-details-content h3 {
+  color: #304b3a;
+  font-size: 22px;
+  margin-top: 25px;
+}
+
+.story-details-content p {
+  color: #626d66;
+  line-height: 1.8;
+  font-size: 16px;
+  margin-bottom: 18px;
+}
+
+/* =========================================
+   STORY BUTTON
+   ========================================= */
+
+.story-button {
+  display: inline-block;
+  border: none;
+  border-radius: 8px;
+  padding: 11px 18px;
+  background: #557a5c;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.story-button:hover {
+  background: #3f6046;
+}
+
+/* =========================================
+   PAGE HERO
+   ========================================= */
+
+.page-hero {
+  padding: 60px 20px;
+  text-align: center;
+  background: #edf3ed;
+}
+
+.page-hero h1 {
+  margin-top: 0;
+}
+
+.page-hero p {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* =========================================
+   STORIES MESSAGE
+   ========================================= */
+
+.stories-message {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 40px;
+  text-align: center;
+  background: white;
+  border-radius: 18px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
+}
+
+/* =========================================
+   FILTER AREA
+   ========================================= */
+
+.filters {
+  background: white;
+  padding: 25px;
+  border-radius: 16px;
+  margin: 30px 0;
+  box-shadow: 0 7px 22px rgba(0, 0, 0, 0.06);
+}
+
+/* =========================================
+   LOADING
+   ========================================= */
+
+.loading {
+  text-align: center;
+  padding: 50px;
+  font-size: 18px;
+  color: #557a5c;
+}
+
+/* =========================================
+   ERROR
+   ========================================= */
+
+.error {
+  padding: 18px;
+  border-radius: 10px;
+  background: #fff1f1;
+  color: #a33;
+  margin: 20px 0;
+}
+
+/* =========================================
+   RESPONSIVE TABLET
+   ========================================= */
+
+@media (max-width: 900px) {
+  nav {
+    gap: 18px;
+    padding: 16px 20px;
+  }
+
+  .animals-grid,
+  .stories-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+}
+
+/* =========================================
+   RESPONSIVE PHONE
+   ========================================= */
+
+@media (max-width: 600px) {
+  nav {
+    flex-wrap: wrap;
+    gap: 12px 18px;
+    padding: 15px;
+  }
+
+  nav a {
+    font-size: 14px;
+  }
+
+  .page-container {
+    width: 92%;
+    padding: 35px 0;
+  }
+
+  .animals-grid,
+  .stories-grid {
+    grid-template-columns: 1fr;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+
+  .animal-card img {
+    height: 200px;
+  }
+
+  .story-card img {
+    height: 190px;
+  }
+
+  /*
+     Same normal story image,
+     automatically fits the phone.
+  */
+
+  .story-details-card img {
+    width: 90%;
+    max-width: 500px;
+    height: 240px;
+    margin: 20px auto 0;
+  }
+
+  .story-details-content {
+    padding: 22px;
+  }
+
+  .story-details-content h2 {
+    font-size: 25px;
+  }
+
+  input,
+  select,
+  textarea {
+    max-width: 100%;
+  }
+}
